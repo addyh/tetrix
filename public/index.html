@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetris</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=350" />
+    <link rel="stylesheet" href="style.css" />
+    <script language="javascript" type="text/javascript" src="./libs/p5/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./libs/p5/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://addy.ml/tetris-host/hiscores.php?best"></script>
+    <script language="javascript" type="text/javascript" src="hiscores.js"></script>
+    <script language="javascript" type="text/javascript" src="mouse.js"></script>
+    <script language="javascript" type="text/javascript" src="matrix.js"></script>
+    <script language="javascript" type="text/javascript" src="BoardClass.js"></script>
+    <script language="javascript" type="text/javascript" src="PieceClass.js"></script>
+    <script language="javascript" type="text/javascript" src="PlayerClass.js"></script>
+    <script language="javascript" type="text/javascript" src="ScreenLoops.js"></script>
+    <script language="javascript" type="text/javascript" src="Main.js"></script>
+    <script language="javascript" type="text/javascript" src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+
+    <div id="canvasContainer"></div>
+
+    <div id="screenContainer_Left">
+
+      <!-- Enter Name Screen -->
+      <form id="nameForm">
+        <input id="nameInput" type="text" maxlength="19" />
+      </form>
+
+      <!-- Waiting Room Elements -->
+      <div id="playerList"></div>
+      <div id="challengeAlert"></div>
+
+      <!-- Buttons -->
+      <a id="startGameBtn" href="#">Start Game!</a>
+      <a id="difficultyBtn" href="#">Difficulty: Easy</a>
+      <a id="changeNameBtn" href="#">Change Name</a>
+      <a id="submitNameBtn" href="#">Submit</a>
+      <a id="playAgainBtn" href="#">Play Again</a>
+      <a id="easyBtn" href="#">Easy</a>
+      <a id="medBtn" href="#">Med.</a>
+      <a id="hardBtn" href="#">Hard</a>
+      <a id="creditsBtn" href="https://addyh.github.io">addyh.github.io</a>
+
+    </div>
+
+    <div id="screenContainer_Right"></div>
+
+  </body>
+</html>

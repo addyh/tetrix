@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background-color: #ffffff;
+  text-align: left;
+  overflow-y: hidden;
+}
+#nameInput {
+  position: absolute;
+  top: 175px;
+  left: 96px;
+  width: 300px;
+  height: 40px;
+  font-size: 24pt;
+  border: 2px solid black;
+}
+#playerList {
+  position: absolute;
+  top: 175px;
+  left: 44px;
+  background-color: white;
+  width: 403px;
+  height: 320px;
+  font-size: 17pt;
+  border: 2px solid black;
+  text-align: left;
+  overflow-y: scroll;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  white-space: pre;
+}
+.playerListItem {
+  margin: 10px 0 10px 10px;
+}
+.playerListStatus {
+  position: absolute;
+  font-size: 10pt;
+  font-family: Verdana, Arial;
+  font-weight: normal;
+}
+.playerListLink {
+  color: #545454;
+  text-decoration: underline;
+}
+.playerListLink:hover {
+  color: #787878;
+  text-decoration: none;
+}
+.playerListLink:active {
+  color: black;
+  text-decoration: none;
+}
+#challengeAlert {
+  position: absolute;
+  top: 192px;
+  left: 122px;
+  background-color: green;
+  border: 9px solid #646464;
+  width: 275px;
+  height: 200px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14pt;
+}
+#acceptChallenge {
+  float: left;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #006600;
+  color: white;
+}
+#rejectChallenge {
+  float: right;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #660000;
+  color: white;
+}
+#acceptChallenge:hover {
+  background-color: #009900;
+  text-decoration: none;
+}
+#rejectChallenge:hover {
+  background-color: #990000;
+  text-decoration: none;
+}
+#screenContainer_Left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 490px;
+  height: 595px;
+  /*border: 4px solid red;*/
+}
+#screenContainer_Right {
+  position: absolute;
+  top: 0px;
+  left: 490px;
+  width: 490px;
+  height: 595px;
+  /*border: 4px solid blue;*/
+}
+#startGameBtn {
+  position: absolute;
+  top: 100px;
+  left: 121px;
+  padding: 10px 10px 10px 10px;
+  border: 9px solid rgb(100, 100, 100);
+  font-size: 40px;
+  font-family: Arial;
+  background-color: rgb(40, 40, 40);
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+#startGameBtn:hover {
+  color: white;
+  border: 9px solid rgb(150, 150, 150);
+}
+#difficultyBtn {
+  position: absolute;
+  top: 410px;
+  left: 94px;
+  padding: 10px 10px 10px 10px;
+  border: 9px solid rgb(100, 100, 100);
+  font-size: 40px;
+  font-family: Arial;
+  background-color: rgb(40, 40, 40);
+  color: green;
+  text-decoration: none;
+}
+#difficultyBtn:hover {
+  border: 9px solid rgb(150, 150, 150);
+}
+#changeNameBtn {
+  position: absolute;
+  top: 42px;
+  left: 315px;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+#changeNameBtn:hover {
+  color: rgb(0, 0, 238);
+  text-decoration: underline;
+}
+#submitNameBtn {
+  position: absolute;
+  top: 270px;
+  left: 74px;
+  padding: 10px 100px 10px 100px;
+  border: 9px solid rgb(100, 100, 100);
+  font-size: 40px;
+  font-family: Arial;
+  background-color: rgb(40, 40, 40);
+  color: cyan;
+  text-decoration: none;
+}
+#submitNameBtn:hover {
+  color: white;
+  border: 9px solid rgb(150, 150, 150);
+}
+#playAgainBtn {
+  position: absolute;
+  top: 100px;
+  left: 121px;
+  padding: 10px 20px 10px 20px;
+  border: 9px solid rgb(100, 100, 100);
+  font-size: 40px;
+  font-family: Arial;
+  background-color: rgb(40, 40, 40);
+  color: rgb(20, 255, 20);
+  text-decoration: none;
+}
+#playAgainBtn:hover {
+  color: white;
+  border: 9px solid rgb(150, 150, 150);
+}
+#easyBtn {
+  position: absolute;
+  top: 391px;
+  left: 79px;
+  border: 3px solid green;
+  padding: 10px 15px 10px 15px;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+}
+#easyBtn:hover {
+  border-width: 5px;
+  top: 389px;
+  left: 77px;
+}
+#medBtn {
+  position: absolute;
+  top: 391px;
+  left: 200px;
+  border: 3px solid orange;
+  padding: 10px 15px 10px 15px;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+#medBtn:hover {
+  border-width: 5px;
+  top: 389px;
+  left: 198px;
+}
+#hardBtn {
+  position: absolute;
+  top: 391px;
+  left: 320px;
+  border: 3px solid red;
+  padding: 10px 15px 10px 15px;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+#hardBtn:hover {
+  border-width: 5px;
+  top: 389px;
+  left: 318px;
+}
+#creditsBtn {
+  position: absolute;
+  top: 529px;
+  left: 151px;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+#creditsBtn:hover {
+  color: rgb(0, 0, 238);
+  text-decoration: underline;
+}
